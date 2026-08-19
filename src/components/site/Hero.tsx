@@ -7,9 +7,9 @@ export function Hero() {
   useEffect(() => setMounted(true), []);
 
   const line = (text: string, delay: number) => (
-    <span className="block overflow-hidden">
+    <span className="block overflow-hidden pb-[0.06em]">
       <span
-        className="block transition-[transform,opacity] duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
+        className="block pb-[0.04em] transition-[transform,opacity] duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
         style={{
           transitionDelay: `${delay}ms`,
           transform: mounted ? "none" : "translateY(105%)",
@@ -22,7 +22,10 @@ export function Hero() {
   );
 
   return (
-    <section className="paper-grain relative flex min-h-[92vh] items-center pt-24 text-foreground" aria-label="Introduction">
+    <section
+      className="paper-grain relative flex min-h-[88svh] items-center py-24 text-foreground"
+      aria-label="Introduction"
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-1/3 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"
@@ -35,7 +38,7 @@ export function Hero() {
           Portfolio — {profile.location}
         </p>
 
-        <h1 className="font-display mt-6 text-[16vw] leading-[0.86] font-normal tracking-[-0.03em] sm:text-[11vw] lg:text-[8.5rem]">
+        <h1 className="font-display mt-6 text-[15vw] leading-[0.88] font-normal tracking-[-0.03em] sm:text-[10.5vw] lg:text-[7.5rem]">
           {line(profile.first, 60)}
           <span className="text-muted-foreground">{line(profile.middle, 160)}</span>
           {line(profile.last, 260)}
