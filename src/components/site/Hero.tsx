@@ -26,10 +26,6 @@ export function Hero() {
       className="paper-grain relative flex min-h-[88svh] items-center py-24 text-foreground"
       aria-label="Introduction"
     >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-1/3 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"
-      />
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
         <p
           className="font-mono-meta text-[0.66rem] text-primary transition-opacity duration-700"
@@ -38,7 +34,7 @@ export function Hero() {
           Portfolio — {profile.location}
         </p>
 
-        <h1 className="font-display mt-6 text-[15vw] leading-[0.88] font-normal tracking-[-0.03em] sm:text-[10.5vw] lg:text-[7.5rem]">
+        <h1 className="font-display mt-5 text-[13vw] leading-[0.9] font-normal tracking-[-0.03em] sm:text-[8vw] lg:text-[5.75rem]">
           {line(profile.first, 60)}
           <span className="text-muted-foreground">{line(profile.middle, 160)}</span>
           {line(profile.last, 260)}
