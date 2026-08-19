@@ -10,7 +10,7 @@ export function Reveal({
   children: ReactNode;
   delay?: number;
   as?: ElementType;
-  className?: string;
+  className?: string | undefined;
 }) {
   const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
