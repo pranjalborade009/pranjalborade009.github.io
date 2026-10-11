@@ -23,18 +23,6 @@ export function Work() {
                 params={{ slug: project.slug }}
                 className="group block h-full overflow-hidden rounded-md border border-border bg-background transition-colors hover:border-primary"
               >
-                <div className="overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.imageAlt}
-                    width={1200}
-                    height={900}
-                    loading="lazy"
-                    className={`w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03] ${
-                      i === 0 ? "aspect-[16/7]" : "aspect-[4/3]"
-                    }`}
-                  />
-                </div>
                 <div className="p-6 sm:p-8">
                   <div className="flex flex-wrap items-baseline justify-between gap-3">
                     <span className="font-mono-meta text-[0.62rem] text-primary">

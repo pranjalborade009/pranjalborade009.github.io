@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep portfolio content centralized in `src/data/portfolio.ts` so selected work and case studies stay consistent.
+- Import uploaded portraits and downloadable resumes through Lovable asset pointers so binary media stays out of the source tree.

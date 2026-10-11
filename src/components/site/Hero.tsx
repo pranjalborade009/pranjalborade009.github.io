@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowDownToLine, ArrowRight } from "lucide-react";
 import { profile, resumeUrl } from "@/data/portfolio";
+import portrait from "@/assets/pranjal-portrait.png.asset.json";
 
 export function Hero() {
   const [mounted, setMounted] = useState(false);
@@ -23,7 +24,7 @@ export function Hero() {
 
   return (
     <section
-      className="paper-grain relative flex min-h-[88svh] items-center py-24 text-foreground"
+      className="paper-grain relative flex min-h-[88svh] items-center pt-28 pb-16 text-foreground"
       aria-label="Introduction"
     >
       <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">
@@ -34,11 +35,21 @@ export function Hero() {
           Portfolio — {profile.location}
         </p>
 
-        <h1 className="font-display mt-5 text-[13vw] leading-[0.9] font-normal tracking-[-0.03em] sm:text-[8vw] lg:text-[5.75rem]">
+        <div className="mt-6 grid grid-cols-[minmax(0,1fr)_7.5rem] items-center gap-4 sm:grid-cols-[minmax(0,1fr)_14rem] sm:gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
+        <h1 className="font-display text-[2.5rem] leading-[1] font-normal sm:text-6xl lg:text-[5.75rem]">
           {line(profile.first, 60)}
           <span className="text-muted-foreground">{line(profile.middle, 160)}</span>
           {line(profile.last, 260)}
         </h1>
+        <img
+          src={portrait.url}
+          alt="Pranjal Vishal Borade"
+          width={768}
+          height={768}
+          fetchPriority="high"
+          className="aspect-[4/5] w-full rounded-md border border-border object-cover object-top"
+        />
+        </div>
 
         <div
           className="mt-10 grid gap-8 border-t border-border pt-8 transition-[opacity,transform] duration-700 md:grid-cols-[1.4fr_1fr]"
