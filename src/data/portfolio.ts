@@ -1,6 +1,3 @@
-import promptshieldImg from "@/assets/promptshield.jpg";
-import assamTeaImg from "@/assets/assam-tea.jpg";
-import fitmeImg from "@/assets/fitme.jpg";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 
 export const resumeUrl = resumeAsset.url;
@@ -178,8 +175,6 @@ export type Project = {
   type: string;
   summary: string;
   tech: string[];
-  image: string;
-  imageAlt: string;
   overview: string;
   problem: string;
   approach: string[];
@@ -201,8 +196,6 @@ export const projects: Project[] = [
     summary:
       "A tool built in a 24-hour hackathon that detects and filters unsafe or malicious prompt inputs before they reach a model.",
     tech: ["FastAPI", "Uvicorn", "Python", "HTML", "CSS"],
-    image: promptshieldImg,
-    imageAlt: "Abstract burgundy shield-like composition representing PromptShield",
     overview:
       "PromptShield was built during a 24-hour hackathon with a four-member team. It takes a prompt, checks it against safety rules, and shows the user why an input was flagged.",
     problem:
@@ -238,8 +231,6 @@ export const projects: Project[] = [
     summary:
       "An interactive tea-commerce website built around product storytelling, scroll-based interaction and a working subscription flow.",
     tech: ["React", "JavaScript", "HTML", "CSS", "Node.js", "Nodemailer"],
-    image: assamTeaImg,
-    imageAlt: "A cup of dark tea on warm ivory linen in soft directional light",
     overview:
       "Assam Tea is a commerce experience where the browsing itself is part of the product — the page unfolds the ritual of the tea rather than listing items in a grid.",
     problem:
@@ -275,8 +266,6 @@ export const projects: Project[] = [
     summary:
       "An application that helps people organize food choices and portion information, with the emphasis on usability and clear presentation.",
     tech: ["React", "JavaScript", "HTML", "CSS", "Supabase"],
-    image: fitmeImg,
-    imageAlt: "Abstract composition of warm circles and bars suggesting portions and balance",
     overview:
       "FitMe is an ongoing project focused on a small everyday problem: keeping food choices and portion information organized in a way that's actually readable.",
     problem:

@@ -63,14 +63,6 @@ function CaseStudy() {
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">{project.summary}</p>
 
-        <img
-          src={project.image}
-          alt={project.imageAlt}
-          width={1200}
-          height={900}
-          className="mt-12 aspect-[16/8] w-full rounded-md border border-border object-cover"
-        />
-
         <div className="mt-16">
           <Block number="01" label="Overview">
             {project.overview}
