@@ -1,4 +1,4 @@
-- [ ] Remove project images from selected work and case studies.
-- [ ] Place the uploaded portrait beside the introduction.
-- [ ] Create a professional resume PDF and connect the download links.
-- [ ] Verify the portfolio and resume downloads.
+- [x] Remove project images from selected work and case studies.
+- [x] Place the uploaded portrait beside the introduction.
+- [x] Create a professional resume PDF and connect the download links.
+- [x] Verify the portfolio and resume downloads.
