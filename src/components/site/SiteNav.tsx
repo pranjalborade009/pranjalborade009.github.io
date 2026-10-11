@@ -59,14 +59,16 @@ export function SiteNav({ standalone = false }: { standalone?: boolean }) {
         </div>
 
         <div className="flex items-center gap-3">
-          <a
-            href={resumeUrl}
-            download
-            className="hidden items-center gap-2 rounded-full border border-primary px-4 py-1.5 font-mono-meta text-[0.62rem] text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:inline-flex"
-          >
-            <ArrowDownToLine className="h-3 w-3" aria-hidden />
-            Resume
-          </a>
+          {resumeUrl ? (
+            <a
+              href={resumeUrl}
+              download
+              className="hidden items-center gap-2 rounded-full border border-primary px-4 py-1.5 font-mono-meta text-[0.62rem] text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:inline-flex"
+            >
+              <ArrowDownToLine className="h-3 w-3" aria-hidden />
+              Resume
+            </a>
+          ) : null}
           <ThemeToggle />
           <button
             type="button"
@@ -102,14 +104,16 @@ export function SiteNav({ standalone = false }: { standalone?: boolean }) {
               </li>
             ) : null}
           </ul>
-          <a
-            href={resumeUrl}
-            download
-            className="mt-6 inline-flex items-center gap-2 rounded-full border border-primary px-5 py-2 font-mono-meta text-[0.66rem] text-primary"
-          >
-            <ArrowDownToLine className="h-3 w-3" aria-hidden />
-            Download resume
-          </a>
+          {resumeUrl ? (
+            <a
+              href={resumeUrl}
+              download
+              className="mt-6 inline-flex items-center gap-2 rounded-full border border-primary px-5 py-2 font-mono-meta text-[0.66rem] text-primary"
+            >
+              <ArrowDownToLine className="h-3 w-3" aria-hidden />
+              Download resume
+            </a>
+          ) : null}
         </div>
       ) : null}
 

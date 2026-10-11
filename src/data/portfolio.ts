@@ -1,6 +1,4 @@
-import resumeAsset from "@/assets/professional-resume.pdf.asset.json";
-
-export const resumeUrl = resumeAsset.url;
+export const resumeUrl: string | null = null;
 
 export const profile = {
   first: "Pranjal",

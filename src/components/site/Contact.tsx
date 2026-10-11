@@ -25,22 +25,26 @@ export function Contact() {
               <Mail className="h-3.5 w-3.5" aria-hidden />
               Email me
             </a>
-            <a
-              href={resumeUrl}
-              download
-              className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 font-mono-meta text-[0.66rem] text-foreground transition-colors hover:border-primary hover:text-primary"
-            >
-              <ArrowDownToLine className="h-3.5 w-3.5" aria-hidden />
-              Download resume
-            </a>
-            <a
-              href={resumeUrl}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 font-mono-meta text-[0.66rem] text-foreground transition-colors hover:border-primary hover:text-primary"
-            >
-              View resume
-            </a>
+            {resumeUrl ? (
+              <>
+                <a
+                  href={resumeUrl}
+                  download
+                  className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 font-mono-meta text-[0.66rem] text-foreground transition-colors hover:border-primary hover:text-primary"
+                >
+                  <ArrowDownToLine className="h-3.5 w-3.5" aria-hidden />
+                  Download resume
+                </a>
+                <a
+                  href={resumeUrl}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 font-mono-meta text-[0.66rem] text-foreground transition-colors hover:border-primary hover:text-primary"
+                >
+                  View resume
+                </a>
+              </>
+            ) : null}
           </div>
         </Reveal>
 
