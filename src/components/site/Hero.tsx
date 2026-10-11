@@ -45,9 +45,9 @@ export function Hero() {
           src={portrait.url}
           alt="Pranjal Vishal Borade"
           width={768}
-          height={768}
+          height={968}
           fetchPriority="high"
-          className="aspect-[4/5] w-full rounded-md border border-border object-cover object-top"
+          className="aspect-[4/5] w-full object-contain object-top"
         />
         </div>
 
