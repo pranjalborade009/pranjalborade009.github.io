@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowDownToLine, ArrowRight } from "lucide-react";
 import { profile, resumeUrl } from "@/data/portfolio";
-import portrait from "@/assets/pranjal-portrait.png.asset.json";
 
 export function Hero() {
   const [mounted, setMounted] = useState(false);
@@ -42,7 +41,7 @@ export function Hero() {
           {line(profile.last, 260)}
         </h1>
         <img
-          src={portrait.url}
+          src="/images/pranjal-portrait-transparent.png"
           alt="Pranjal Vishal Borade"
           width={768}
           height={968}
