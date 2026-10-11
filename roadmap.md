@@ -1,0 +1,4 @@
+- [ ] Remove project images from selected work and case studies.
+- [ ] Place the uploaded portrait beside the introduction.
+- [ ] Create a professional resume PDF and connect the download links.
+- [ ] Verify the portfolio and resume downloads.
