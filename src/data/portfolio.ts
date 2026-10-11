@@ -1,4 +1,4 @@
-import resumeAsset from "@/assets/resume.pdf.asset.json";
+import resumeAsset from "@/assets/professional-resume.pdf.asset.json";
 
 export const resumeUrl = resumeAsset.url;
 
